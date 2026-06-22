@@ -1,0 +1,5 @@
+2026-06-22 10:23:38 ERROR [http-nio-8080-exec-194] com.zaxxer.hikari.pool.HikariPool HikariPool-1 - Connection is not available, request timed out after 30000ms.
+2026-06-22 10:23:39 ERROR [http-nio-8080-exec-195] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] Servlet.service() for servlet [dispatcherServlet] threw exception
+2026-06-22 10:23:39 java.sql.SQLTransientConnectionException: HikariPool-1 - Connection is not available, request timed out after 30000ms.
+2026-06-22 10:23:40 WARN  [http-nio-8080-exec-196] o.a.tomcat.util.threads.ThreadPoolExecutor Active threads=200, maxThreads=200, queueSize=100
+2026-06-22 10:23:41 ERROR [http-nio-8080-exec-197] java.net.SocketTimeoutException: Read timed out

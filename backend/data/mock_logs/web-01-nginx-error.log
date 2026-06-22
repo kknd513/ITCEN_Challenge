@@ -1,0 +1,4 @@
+2026-06-22 10:23:41 [error] 31#31: *128 upstream timed out (110: Connection timed out) while reading response header from upstream, client: 10.10.20.15, server: portal.example.local, request: "GET /api/order/list HTTP/1.1", upstream: "http://10.0.0.21:8080/api/order/list", host: "portal.example.local"
+2026-06-22 10:23:45 [warn] 31#31: *129 upstream server temporarily disabled while reading response header from upstream, upstream: "http://10.0.0.21:8080/api/login"
+2026-06-22 10:23:47 [error] 31#31: *130 connect() failed (111: Connection refused) while connecting to upstream, request: "GET /api/health HTTP/1.1", upstream: "http://10.0.0.21:8080/api/health"
+2026-06-22 10:23:48 access: GET /api/order/list HTTP/1.1 -> 502 Bad Gateway, request_time=30.001, upstream_response_time=30.000

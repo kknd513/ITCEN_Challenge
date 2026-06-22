@@ -1,0 +1,14 @@
+CENOps Copilot Railway Prototype
+
+Recommended deployment:
+- /frontend: CENOps Copilot UI
+- /backend: FastAPI Backend Orchestrator
+- /mock-agent: Railway mock WEB/WAS/DB agent service. Deploy 3 times if required.
+- /real-agent: actual A~C server agent. Install on real A/B/C servers or deploy as test services.
+- Railway PostgreSQL + pgvector: RAG and incident storage
+- OpenAI API: Railway prototype external LLM
+
+Real server mapping:
+- A-SERVER = WEB-01 = Nginx / Web tier
+- B-SERVER = WAS-01 = Tomcat / WAS tier
+- C-SERVER = DB-01 = PostgreSQL / DB tier

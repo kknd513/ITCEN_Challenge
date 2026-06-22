@@ -1,0 +1,5 @@
+2026-06-22 10:23:35 WARNING: connection received: host=10.0.0.21 port=5432 user=app_user database=service_db
+2026-06-22 10:23:36 LOG: duration: 382000.231 ms statement: SELECT * FROM orders WHERE status = 'PENDING'
+2026-06-22 10:23:37 WARNING: lock wait detected for relation orders
+2026-06-22 10:23:38 WARNING: HikariPool-1 - Connection request from WAS-01 timed out after 30001ms
+2026-06-22 10:23:40 LOG: active_sessions=187 lock_wait_count=14 slow_query_count=32
