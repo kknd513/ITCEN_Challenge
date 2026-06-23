@@ -1,0 +1,58 @@
+[
+  {
+    "intent": "disk_usage",
+    "examples": ["디스크 사용량 확인", "A서버 디스크 용량 보여줘", "루트 파티션 사용률 확인"],
+    "command_template": "df -h",
+    "risk": "read_only",
+    "description": "파일시스템 디스크 사용량 조회"
+  },
+  {
+    "intent": "memory_usage",
+    "examples": ["메모리 상태 확인", "메모리 사용량 보여줘", "free 메모리 확인"],
+    "command_template": "free -h",
+    "risk": "read_only",
+    "description": "메모리 사용량 조회"
+  },
+  {
+    "intent": "cpu_load",
+    "examples": ["CPU 부하 확인", "로드 평균 보여줘", "서버 부하 상태"],
+    "command_template": "uptime",
+    "risk": "read_only",
+    "description": "시스템 부하 및 uptime 조회"
+  },
+  {
+    "intent": "top_processes",
+    "examples": ["CPU 많이 쓰는 프로세스", "상위 프로세스 보여줘", "프로세스 사용률 확인"],
+    "command_template": "ps -eo pid,ppid,comm,%cpu,%mem --sort=-%cpu | head -n 15",
+    "risk": "read_only",
+    "description": "CPU 사용률 기준 상위 프로세스 조회"
+  },
+  {
+    "intent": "network_ports",
+    "examples": ["열린 포트 확인", "LISTEN 포트 보여줘", "서비스 포트 확인"],
+    "command_template": "ss -tulpen",
+    "risk": "read_only",
+    "description": "Listen 포트 및 소켓 조회"
+  },
+  {
+    "intent": "ip_address",
+    "examples": ["IP 주소 확인", "네트워크 인터페이스 보여줘", "서버 IP 확인"],
+    "command_template": "ip addr show",
+    "risk": "read_only",
+    "description": "네트워크 인터페이스 및 IP 조회"
+  },
+  {
+    "intent": "recent_syslog",
+    "examples": ["최근 시스템 로그", "에러 로그 확인", "syslog 최근 100줄"],
+    "command_template": "journalctl -n 100 --no-pager",
+    "risk": "read_only",
+    "description": "systemd journal 최근 로그 조회"
+  },
+  {
+    "intent": "failed_services",
+    "examples": ["실패한 서비스 확인", "장애 서비스 보여줘", "failed service 목록"],
+    "command_template": "systemctl --failed --no-pager",
+    "risk": "read_only",
+    "description": "실패 상태 systemd unit 조회"
+  }
+]
