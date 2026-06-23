@@ -101,7 +101,7 @@ function App() {
   const examples = ['WEB-01 502 오류 원인 분석해줘', 'A서버 최근 Nginx 로그 상태 확인해줘', 'B서버 Tomcat 502 조치 문서 찾아줘', 'C서버 DB 연결 상태와 RAG 문서 근거 알려줘', '장애 분석 보고서를 생성해줘'];
 
   return <div className="app"><Sidebar/><main className="main">
-    <header className="hero"><div><h1>CENOps Copilot 챗봇 인터페이스 프로토타입</h1><p>챗봇 기반 시스템 운영자 Assistant</p></div></header>
+    <header className="hero"><div><h1>CENOps Copilot 챗봇 프로토타입</h1><p>챗봇 기반 시스템 운영자 Assistant</p></div></header>
     <section className="card intro">
       <h2>안녕하세요!</h2><p><b>CENOps Copilot</b>이 시스템 운영을 도와드릴게요.</p>
       <div className="exampleBox"><h3>챗봇 예시 질문</h3>{examples.map((ex) => <button key={ex} onClick={() => submit(ex)}>{ex}<ChevronRight size={18}/></button>)}</div>
