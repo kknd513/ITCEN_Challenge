@@ -3,3 +3,72 @@
 .targetRow{display:flex;align-items:center;gap:12px;margin:18px 0 8px;color:#12326b;font-weight:700}
 .targetRow select{border:1px solid #c6d7ff;border-radius:14px;padding:12px 14px;background:#fff;color:#0b1f4d;font-size:15px;min-width:220px}
 .noCauses{border:1px dashed #7aa4ff;background:#f7faff;color:#12326b;border-radius:16px;padding:18px;margin:18px 0;font-weight:700}
+
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f7fb;
+  color: #172033;
+}
+
+.app-shell { min-height: 100vh; }
+
+.app-header {
+  padding: 28px 40px;
+  background: #ffffff;
+  border-bottom: 1px solid #e3e7ef;
+}
+
+.app-main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 32px 24px;
+}
+
+.natural-command-panel {
+  padding: 24px;
+  border: 1px solid #dfe4ec;
+  border-radius: 14px;
+  background: #ffffff;
+}
+
+.command-form {
+  margin-top: 20px;
+  display: grid;
+  gap: 16px;
+}
+
+.command-form select,
+.command-form textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px;
+  border: 1px solid #cfd4dc;
+  border-radius: 8px;
+}
+
+.command-form button {
+  width: fit-content;
+  padding: 11px 18px;
+  border: 0;
+  border-radius: 8px;
+  background: #0b5cad;
+  color: #ffffff;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.result-output pre,
+.command-error pre {
+  margin-top: 8px;
+  padding: 14px;
+  overflow-x: auto;
+  border-radius: 8px;
+  background: #111827;
+  color: #e5e7eb;
+  white-space: pre-wrap;
+  font-family: Consolas, monospace;
+  font-size: 13px;
+}
+
