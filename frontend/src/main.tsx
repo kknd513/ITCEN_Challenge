@@ -36,7 +36,7 @@ function Sidebar() {
     { icon: Settings, label: '설정' },
   ];
   return <aside className="sidebar">
-    <div className="brand"><div className="brandBot">🤖</div><div>CENOps<br/>Copilot</div></div>
+    <div className="brand"><div>CENOps<br/>Copilot</div></div>
     <nav>{items.map(({ icon: Icon, label, active }) => <div key={label} className={`navItem ${active ? 'active' : ''}`}><Icon size={22}/><span>{label}</span></div>)}</nav>
     <div className="admin"><div className="avatar"><User size={22}/></div><div><b>admin</b><span>시스템 관리자</span></div></div>
   </aside>;
@@ -101,7 +101,7 @@ function App() {
   const examples = ['WEB-01 502 오류 원인 분석해줘', 'A서버 최근 Nginx 로그 상태 확인해줘', 'B서버 Tomcat 502 조치 문서 찾아줘', 'C서버 DB 연결 상태와 RAG 문서 근거 알려줘', '장애 분석 보고서를 생성해줘'];
 
   return <div className="app"><Sidebar/><main className="main">
-    <header className="hero"><div><h1>CENOps Copilot 챗봇 인터페이스</h1><p>Railway 기반 운영지원 프로토타입</p></div><div className="heroBot">🤖</div></header>
+    <header className="hero"><div><h1>CENOps Copilot 챗봇 인터페이스</h1><p>Railway 기반 운영지원 프로토타입</p></div>
     <section className="card intro">
       <h2>안녕하세요!</h2><p><b>CENOps Copilot</b>이 Railway 기반 운영을 도와드릴게요.</p>
       <div className="exampleBox"><h3>챗봇 예시 질문</h3>{examples.map((ex) => <button key={ex} onClick={() => submit(ex)}>{ex}<ChevronRight size={18}/></button>)}</div>
