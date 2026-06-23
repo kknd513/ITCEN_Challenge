@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { createRoot } from 'react-dom/client';
+import NaturalCommandPanel from "./components/NaturalCommandPanel";
 import { Bot, LayoutDashboard, Server, Bell, FileText, Settings, Send, BookOpen, Terminal, Activity, ClipboardList, User, ChevronRight, Loader2, CheckCircle2 } from 'lucide-react';
 import './styles.css';
 
