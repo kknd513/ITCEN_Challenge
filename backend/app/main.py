@@ -6,6 +6,9 @@ from typing import Any
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
+from app.routers import natural_command
+app.include_router(natural_command.router)
+
 from app.core.config import get_settings
 from app.models.schemas import (
     ChatRequest,
