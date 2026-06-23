@@ -23,7 +23,7 @@ type AnalysisResponse = {
   report_markdown: string;
 };
 
-const API_BASE = import.meta.env.VITE_API_BASE_URL || 'http://localhost:8000';
+const API_BASE = import.meta.env.VITE_API_BASE_URL || 'https://back-end-production-8a58.up.railway.app';
 
 function Sidebar() {
   const items = [
